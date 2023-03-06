@@ -1,0 +1,18 @@
+{
+  "name": "material-file-icons",
+  "version": "1.0.0",
+  "description": "the file icons base on vscode-material-file-icons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "icons"
+  ],
+  "author": "Oliver-hub",
+  "license": "MIT",
+  "devDependencies": {
+    "material-icon-theme": "^4.24.0",
+    "typescript": "^4.9.5"
+  }
+}
