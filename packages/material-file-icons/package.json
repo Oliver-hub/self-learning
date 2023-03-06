@@ -12,7 +12,9 @@
   "author": "Oliver-hub",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
     "material-icon-theme": "^4.24.0",
+    "rollup": "^3.18.0",
     "typescript": "^4.9.5"
   }
 }
