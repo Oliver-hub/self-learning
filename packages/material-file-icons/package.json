@@ -2,9 +2,14 @@
   "name": "material-file-icons",
   "version": "1.0.0",
   "description": "the file icons base on vscode-material-file-icons",
-  "main": "index.js",
+  "module": "dist/index.es.js",
+  "main": "dist/index.js",
+  "browser": "dist/index.min.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "rollup -cw"
   },
   "keywords": [
     "icons"
@@ -12,9 +17,13 @@
   "author": "Oliver-hub",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
     "material-icon-theme": "^4.24.0",
     "rollup": "^3.18.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tslib": "^2.5.0",
     "typescript": "^4.9.5"
   }
 }
