@@ -9,7 +9,8 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev",
-    "dev": "rollup -cw"
+    "dev": "rollup -cw",
+    "lint": "eslint \"libs/**/*.{ts,js}\""
   },
   "keywords": [
     "icons"
@@ -19,6 +20,13 @@
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "material-icon-theme": "^4.24.0",
     "rollup": "^3.18.0",
     "rollup-plugin-delete": "^2.0.0",
