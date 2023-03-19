@@ -1,0 +1,10 @@
+{
+  "cSpell.words": [
+    "codepaths",
+    "pakcage",
+    "tsbuildinfo"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

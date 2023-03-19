@@ -27,10 +27,12 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "fs-extra": "^11.1.0",
     "material-icon-theme": "^4.24.0",
     "rollup": "^3.18.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-typescript2": "^0.34.1",
+    "svgo": "^3.0.2",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5"
   }
