@@ -10,6 +10,7 @@ const { readFile } = fs
 const SRC_BASE = 'node_modules/material-icon-theme/'
 const IMPORT_NAME = 'icon-definitions'
 const FILE_ID = IMPORT_NAME + '.js'
+const usedExtensions = new Set()
 
 const config = defineConfig({
   input: [
@@ -68,6 +69,28 @@ const addIcon = async (output, name, extensions, files) => {
     }
     output.icons.push(outputIcon)
   }
+
+  //  add files and extensions for icon search
+  if (extensions?.length) {
+    outputIcon.extensions = Array.from(
+      new Set([
+        ...(outputIcon.extensions ? outputIcon.extensions: []),
+        ...extensions.filter(ext => !usedExtensions.has(ext))
+      ])
+    )
+
+    extensions.forEach(ext => usedExtensions.add(ext))
+  }
+
+  if (files?.length) {
+    outputIcon.files = Array.from(
+      new Set([
+        ...(outputIcon.files ? outputIcon.files: []),
+        ...files
+      ])
+    )
+  }
+
 }
 
 export default function iconDefinitionsResolver () {
@@ -111,7 +134,6 @@ export default function iconDefinitionsResolver () {
 
                   output.defaultIcon = {
                     name: fileIcons.defaultIcon.name,
-                    // TODO: svg
                     svg: await inlineSvg(`${SRC_BASE}/icons/${fileIcons.defaultIcon.name}.svg`, fileIcons.defaultIcon.name)
                   }
 
@@ -120,7 +142,6 @@ export default function iconDefinitionsResolver () {
                       continue
                     }
 
-                    // TODO: add icon
                     await addIcon(output, icon.name, icon.fileExtensions, icon.fileNames)
                   }
 
@@ -128,7 +149,7 @@ export default function iconDefinitionsResolver () {
                 }
 
                 if (module.renderedExports.includes('languageIcons')) {
-                  // console.log('languageIcons: ', module.code)
+                  // console.log('languageIcons: ', module.code), why need this?
                 }
               }
             }

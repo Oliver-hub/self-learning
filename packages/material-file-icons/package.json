@@ -10,7 +10,8 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "rollup -cw",
-    "lint": "eslint \"libs/**/*.{ts,js}\""
+    "build": "rollup -c",
+    "lint": "eslint \"libs/**/*.{ts,js}\" --fix"
   },
   "keywords": [
     "icons"
