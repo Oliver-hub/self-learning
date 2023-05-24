@@ -1,10 +1,15 @@
 {
   "name": "handmade-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "the very first hand made command line interface",
   "main": "index.js",
+  "bin": {
+    "handmade": "./bin/handmade-cli.js"
+  },
   "scripts": {
-    "lint": "eslint --fix \"{**/*,*}.{js,ts,jsx,tsx}\""
+    "dev": "tsc --watch",
+    "lint": "eslint --fix \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "build": "tsc"
   },
   "keywords": [
     "cli",
