@@ -1,4 +1,4 @@
-const Hello = (x: string) => {
+const Hello = () => {
   console.log("HEllo, world");
 };
 

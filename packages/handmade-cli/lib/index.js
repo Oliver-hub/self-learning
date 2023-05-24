@@ -1,5 +1,5 @@
 "use strict";
-var Hello = function (x) {
+var Hello = function () {
     console.log("HEllo, world");
 };
 Hello();

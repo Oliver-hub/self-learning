@@ -1,1 +1,1 @@
-declare const Hello: (x: string) => void;
+declare const Hello: () => void;

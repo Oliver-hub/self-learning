@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.2.3
+    version: 20.2.3
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.43.0
     version: 5.59.7(@typescript-eslint/parser@5.59.7)(eslint@8.41.0)(typescript@5.0.4)
@@ -115,6 +118,10 @@ packages:
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=, tarball: http://npm.gf.com.cn/artifactory/api/npm/npm/@types/json5/-/json5-0.0.29.tgz}
+    dev: true
+
+  /@types/node@20.2.3:
+    resolution: {integrity: sha1-sx6zAGEMODWsAI1pDeb4fij5uHg=, tarball: http://npm.gf.com.cn:80/artifactory/api/npm/npm/@types/node/-/node-20.2.3.tgz}
     dev: true
 
   /@types/semver@7.5.0:
@@ -668,7 +675,7 @@ packages:
     dev: true
 
   /eslint-plugin-prettier@4.2.1(eslint@8.41.0)(prettier@2.8.8):
-    resolution: {integrity: sha1-ZRy7iLHauYv9QvAXoS+mstmT+Us=, tarball: http://npm.gf.com.cn:80/artifactory/api/npm/npm/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz}
+    resolution: {integrity: sha1-ZRy7iLHauYv9QvAXoS+mstmT+Us=, tarball: http://npm.gf.com.cn/artifactory/api/npm/npm/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
@@ -831,7 +838,7 @@ packages:
     dev: true
 
   /fast-diff@1.3.0:
-    resolution: {integrity: sha1-7OQH+lUKZNY4U2zXJ+EpxhYW4PA=, tarball: http://npm.gf.com.cn:80/artifactory/api/npm/npm/fast-diff/-/fast-diff-1.3.0.tgz}
+    resolution: {integrity: sha1-7OQH+lUKZNY4U2zXJ+EpxhYW4PA=, tarball: http://npm.gf.com.cn/artifactory/api/npm/npm/fast-diff/-/fast-diff-1.3.0.tgz}
     dev: true
 
   /fast-glob@3.2.12:
@@ -1392,14 +1399,14 @@ packages:
     dev: true
 
   /prettier-linter-helpers@1.0.0:
-    resolution: {integrity: sha1-0j1B/hN1ZG3i0BBNNFSjAIgCz3s=, tarball: http://npm.gf.com.cn:80/artifactory/api/npm/npm/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz}
+    resolution: {integrity: sha1-0j1B/hN1ZG3i0BBNNFSjAIgCz3s=, tarball: http://npm.gf.com.cn/artifactory/api/npm/npm/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz}
     engines: {node: '>=6.0.0'}
     dependencies:
       fast-diff: 1.3.0
     dev: true
 
   /prettier@2.8.8:
-    resolution: {integrity: sha1-6MXX6YpDBf/j3i4fxKyhpxwosdo=, tarball: http://npm.gf.com.cn:80/artifactory/api/npm/npm/prettier/-/prettier-2.8.8.tgz}
+    resolution: {integrity: sha1-6MXX6YpDBf/j3i4fxKyhpxwosdo=, tarball: http://npm.gf.com.cn/artifactory/api/npm/npm/prettier/-/prettier-2.8.8.tgz}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
