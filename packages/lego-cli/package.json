@@ -1,0 +1,23 @@
+{
+  "name": "lego-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "lego": "./bin/lego.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "cli",
+    "typescript",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "typescript": "^5.0.4"
+  }
+}
