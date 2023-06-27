@@ -7,7 +7,9 @@
     "lego": "./bin/lego.js"
   },
   "scripts": {
-    "build": "tsc"
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "lint": "eslint --fix \"**/*.{ts,js,tsx,jsx}\""
   },
   "keywords": [
     "cli",
@@ -18,6 +20,14 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.8.8",
     "typescript": "^5.0.4"
   }
 }
