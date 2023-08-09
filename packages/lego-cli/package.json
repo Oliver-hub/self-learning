@@ -29,5 +29,10 @@
     "eslint-plugin-promise": "^6.0.0",
     "prettier": "^2.8.8",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.10",
+    "sade": "^1.8.1"
   }
 }
